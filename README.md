@@ -49,6 +49,7 @@ FROM mysql.user;
 Пользователи отображаются корректно.
 
 **Скриншот списка пользователей:**  
+
 ![](screenshots/05_user_list.png)
 
 ## Задание 5. Назначение привилегий пользователю
@@ -60,7 +61,8 @@ GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'localhost' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
 
-**Скриншот назначения привилегий:**  
+**Скриншот назначения привилегий:** 
+
 ![](screenshots/06_flush_privileges.png)
 
 ---
@@ -72,7 +74,8 @@ FLUSH PRIVILEGES;
 SHOW GRANTS FOR 'sys_temp'@'localhost';
 ```
 
-**Скриншот результата проверки привилегий:**  
+**Скриншот результата проверки привилегий:**
+
 ![](screenshots/07_show_grants.png)
 
 ---
@@ -87,6 +90,7 @@ SHOW GRANTS FOR 'sys_temp'@'localhost';
 3. Тестирую соединение — подключение успешно.
 
 **Скриншот успешного подключения:**  
+
 ![](screenshots/08_connection_success.png)
 
 ---
@@ -103,4 +107,5 @@ SHOW GRANTS FOR 'sys_temp'@'localhost';
 5. После выполнения обновляю список схем — база появилась.
 
 **Скриншот структуры импортированной базы Sakila:**  
+
 ![](screenshots/09_sakila_schema_loaded.png)
