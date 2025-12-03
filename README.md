@@ -30,7 +30,14 @@
 Ввожу команду:
 
 ```sql
+
 CREATE USER 'sys_temp'@'localhost'
+
 IDENTIFIED WITH mysql_native_password BY 'TempPass123!';
+
 Скриншот попытки создания:
-![]03_workbench_editor_empty.png
+
+Скриншот попытки создания:
+
+![](03_workbench_editor_empty.png)
+
