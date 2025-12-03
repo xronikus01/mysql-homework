@@ -131,3 +131,14 @@ SHOW GRANTS FOR 'sys_temp'@'localhost';
 | rental           | rental_id            |
 | staff            | staff_id             |
 | store            | store_id             |
+
+---
+
+## Задание 3*. Ограничение прав пользователя `sys_temp` на базу `sakila`
+
+Убираю у пользователя `sys_temp` права на внесение, изменение и удаление данных в базе `sakila`:
+
+```sql
+REVOKE INSERT, UPDATE, DELETE ON sakila.* FROM 'sys_temp'@'localhost';
+FLUSH PRIVILEGES;
+```
