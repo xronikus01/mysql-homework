@@ -50,7 +50,7 @@ FROM mysql.user;
 
 **Скриншот списка пользователей:**  
 
-![](screenshots/05_user_list.png)
+![](05_user_list.png)
 
 ## Задание 5. Назначение привилегий пользователю
 ---
@@ -63,7 +63,7 @@ FLUSH PRIVILEGES;
 
 **Скриншот назначения привилегий:** 
 
-![](screenshots/06_flush_privileges.png)
+![](06_flush_privileges.png)
 
 ---
 ## Задание 6. Проверка назначенных привилегий
@@ -76,7 +76,7 @@ SHOW GRANTS FOR 'sys_temp'@'localhost';
 
 **Скриншот результата проверки привилегий:**
 
-![](screenshots/07_show_grants.png)
+![](07_show_grants.png)
 
 ---
 ## Задание 7. Подключение под новым пользователем
@@ -91,7 +91,7 @@ SHOW GRANTS FOR 'sys_temp'@'localhost';
 
 **Скриншот успешного подключения:**  
 
-![](screenshots/08_connection_success.png)
+![](08_connection_success.png)
 
 ---
 ## Задание 8. Импорт учебной базы данных Sakila
@@ -108,4 +108,4 @@ SHOW GRANTS FOR 'sys_temp'@'localhost';
 
 **Скриншот структуры импортированной базы Sakila:**  
 
-![](screenshots/09_sakila_schema_loaded.png)
+![](09_sakila_schema_loaded.png)
