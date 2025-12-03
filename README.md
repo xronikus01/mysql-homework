@@ -142,3 +142,4 @@ SHOW GRANTS FOR 'sys_temp'@'localhost';
 REVOKE INSERT, UPDATE, DELETE ON sakila.* FROM 'sys_temp'@'localhost';
 FLUSH PRIVILEGES;
 ```
+![]10_revoke_privileges.png
