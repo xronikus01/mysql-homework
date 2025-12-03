@@ -16,6 +16,15 @@
 ![](01_mysql_install.png)
 ---
 
+## Задание 2. Подготовка MySQL Workbench
+
+Открываю MySQL Workbench — начальное окно пустое.
+
+**Скриншот пустого окна Workbench:**
+
+![](02_workbench_empty.png)
+
+
 ## Задание 3. Попытка создать пользователя `sys_temp`
 
 Ввожу команду:
