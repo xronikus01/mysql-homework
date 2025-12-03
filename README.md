@@ -36,3 +36,68 @@ IDENTIFIED WITH mysql_native_password BY 'TempPass123!';
 Скриншот попытки создания:
 
 ![](03_workbench_editor_empty.png)
+---
+## Задание 4. Просмотр списка пользователей
+
+Использую команду:
+
+```sql
+SELECT user, host, plugin
+FROM mysql.user;
+```
+
+Пользователи отображаются корректно.
+
+**Скриншот списка пользователей:**  
+![](screenshots/05_user_list.png)
+## Задание 5. Назначение привилегий пользователю
+---
+Выдаю пользователю `sys_temp` максимальные привилегии:
+
+```sql
+GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+```
+
+**Скриншот назначения привилегий:**  
+![](screenshots/06_flush_privileges.png)
+---
+## Задание 6. Проверка назначенных привилегий
+
+Проверяю, какие привилегии назначены пользователю `sys_temp`:
+
+```sql
+SHOW GRANTS FOR 'sys_temp'@'localhost';
+```
+
+**Скриншот результата проверки привилегий:**  
+![](screenshots/07_show_grants.png)
+---
+## Задание 7. Подключение под новым пользователем
+
+Подключаюсь к серверу MySQL под пользователем `sys_temp`:
+
+1. Открываю MySQL Workbench.  
+2. Создаю новое подключение, указываю:  
+   - **User:** `sys_temp`  
+   - **Password:** `TempPass123!`  
+3. Тестирую соединение — подключение успешно.
+
+**Скриншот успешного подключения:**  
+![](screenshots/08_connection_success.png)
+---
+## Задание 8. Импорт учебной базы данных Sakila
+
+Импортирую учебную базу `Sakila` через MySQL Workbench:
+
+1. Открываю вкладку **Server → Data Import**.  
+2. Выбираю **Import from Self-Contained File**.  
+3. Указываю файлы:  
+   - `sakila-schema.sql`  
+   - `sakila-data.sql`  
+4. Запускаю импорт.  
+5. После выполнения обновляю список схем — база появилась.
+
+**Скриншот структуры импортированной базы Sakila:**  
+![](screenshots/09_sakila_schema_loaded.png)
+---
